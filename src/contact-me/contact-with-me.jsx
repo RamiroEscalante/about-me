@@ -156,7 +156,7 @@ export const ContactWithMe = () => {
               const phone = "523322253535" // tu número con LADA
 
               const url = `https://wa.me/${phone}?text=${encodeURIComponent(
-                `Hola, soy ${name} (${email}). ${message}`
+                `Hola, soy ${name}, ${message}. mi correo es: ${email}.`
               )}`
 
               window.open(url, "_blank")
