@@ -1,6 +1,30 @@
 import { Mail, Linkedin, Github, Send, User, MessageSquare } from "lucide-react"
+import { useRef } from "react"
+import emailjs from "emailjs-com"
 
 export const ContactWithMe = () => {
+
+  const formRef = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formRef.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    ).then(
+      (result) => {
+        alert("Message sent successfully!")
+        formRef.current.reset()
+      },
+      (error) => {
+        alert("An error occurred, please try again later.")
+        console.error("Email sending error:", error.text)
+      }
+    )
+  }
   return (
     <div className="space-y-8">
       {/* Contact Information */}
@@ -22,7 +46,7 @@ export const ContactWithMe = () => {
             </div>
             <div>
               <p className="font-semibold text-slate-800">Email</p>
-              <p className="text-sm text-slate-600 group-hover:text-red-600 transition-colors">
+              <p className="text-[13.5px] text-slate-600 sm: text-[11.6px] group-hover:text-red-600 transition-colors">
                 ramirodamianescalantecadena@gmail.com
               </p>
             </div>
@@ -71,7 +95,7 @@ export const ContactWithMe = () => {
           <h2 className="text-2xl font-bold text-slate-800">Get in Touch</h2>
         </div>
 
-        <form className="space-y-6">
+        <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div>
               <label className="flex items-center gap-2 text-slate-700 font-medium mb-3" htmlFor="name">
@@ -81,6 +105,7 @@ export const ContactWithMe = () => {
               <input
                 type="text"
                 id="name"
+                name="name"
                 className="w-full p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-200 bg-white/50"
                 placeholder="Your full name"
               />
@@ -93,6 +118,7 @@ export const ContactWithMe = () => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 className="w-full p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-200 bg-white/50"
                 placeholder="your.email@example.com"
               />
@@ -106,6 +132,7 @@ export const ContactWithMe = () => {
             </label>
             <textarea
               id="message"
+              name="message"
               rows={5}
               className="w-full p-4 border border-slate-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all duration-200 bg-white/50 resize-none"
               placeholder="Tell me about your project or just say hello..."
@@ -117,7 +144,27 @@ export const ContactWithMe = () => {
             className="group w-full md:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:from-emerald-600 hover:to-teal-700"
           >
             <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-            Send Message
+            Send Message by Email
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              const name = formRef.current?.name?.value || "sin nombre"
+              const email = formRef.current?.email?.value || "sin correo"
+              const message = formRef.current?.message?.value || "sin mensaje"
+              const phone = "523322253535" // tu número con LADA
+
+              const url = `https://wa.me/${phone}?text=${encodeURIComponent(
+                `Hola, soy ${name} (${email}). ${message}`
+              )}`
+
+              window.open(url, "_blank")
+            }}
+            className="group w-full md:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:from-emerald-600 hover:to-teal-700 ml-2"
+          >
+            <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+            Send by WhatsApp
           </button>
         </form>
       </div>
