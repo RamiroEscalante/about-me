@@ -32,6 +32,16 @@ export const Certifications = () => {
       color: "from-red-500 to-orange-600",
       category: "Data Analytics",
     },
+    {
+      name: "Curso Santander | Introducción a la programación con Python",
+      description:
+        "This course will guide you from a basic level to a solid understanding of Python fundamentals. You'll learn to write clear and efficient code through interactive lessons, hands-on exercises, and real-world problems.",
+      issuer: "Santander",
+      href: "https://www.linkedin.com/posts/ramiro-damian-escalante-cadena-735b08340_activity-7363227529232453632-HU_l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFWX_hkB55ih1_cJHwok1u5U9F63xkBHLkU",
+      image: "/openacademy/open.png",
+      color: "from-emerald-500 to-teal-600",
+      category: "Programming",
+    }
   ]
 
   return (
