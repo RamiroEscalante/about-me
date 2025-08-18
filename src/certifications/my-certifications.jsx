@@ -39,7 +39,7 @@ export const Certifications = () => {
       issuer: "Santander",
       href: "https://www.linkedin.com/posts/ramiro-damian-escalante-cadena-735b08340_activity-7363227529232453632-HU_l?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFWX_hkB55ih1_cJHwok1u5U9F63xkBHLkU",
       image: "/openacademy/open.png",
-      color: "from-emerald-500 to-teal-600",
+      color: "from-orange-500 to-red-600",
       category: "Programming",
     }
   ]
