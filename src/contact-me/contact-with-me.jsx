@@ -160,6 +160,7 @@ export const ContactWithMe = () => {
               )}`
 
               window.open(url, "_blank")
+              formRef.current.reset()
             }}
             className="group w-full md:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:from-emerald-600 hover:to-teal-700 ml-2"
           >
