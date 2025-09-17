@@ -171,7 +171,7 @@ export const CV = () => {
       <footer className="bg-slate-900 text-white py-8 sm:py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
           <p className="text-slate-400 text-sm sm:text-base">
-            © 2025 Ramiro Damian Escalante Cadena. Built with React and Tailwind CSS.
+            ©2025 Ramiro Damian Escalante Cadena. Built with React and Tailwind CSS.
           </p>
         </div>
       </footer>
