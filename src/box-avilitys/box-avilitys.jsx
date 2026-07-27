@@ -18,7 +18,7 @@ const abilities = [
   {
     name: "JavaScript",
     description: "Experienced in JavaScript for dynamic and interactive web applications.",
-    value: 50,
+    value: 75,
     icon: Code,
     color: "from-yellow-500 to-orange-500",
   },
@@ -60,10 +60,45 @@ const abilities = [
   {
     name: "Python",
     description: "Programming with Python for various development tasks and automation.",
-    value: 50,
+    value: 65,
     icon: Cpu,
     color: "from-blue-600 to-indigo-600",
   },
+  {
+    name: "Java 17-21",
+    description: "Developing applications using Java programming language.",
+    value: 70,
+    icon: Code,
+    color: "from-red-600 to-yellow-600",
+  },
+  {
+    name: "C++",
+    description: "C++ Programming for Console Applications and System-Level Development.",
+    value: 60,
+    icon: Cpu,
+    color: "from-purple-600 to-pink-600",
+  },
+  {
+    name: "MySql",
+    description: "Database management and querying using MySQL.",
+    value: 85,
+    icon: Database,
+    color: "from-blue-700 to-cyan-700",
+  },
+  {
+    name: "POO",
+    description: "Object-Oriented Programming principles and design patterns.",
+    value: 80,
+    icon: Code,
+    color: "from-green-700 to-lime-700",
+  },
+  {
+    name: "POE",
+    description: "Programming Oriented to Events for event-driven application development.",
+    value: 60,
+    icon: Code,
+    color: "from-yellow-700 to-orange-700",
+  }
 ]
 
 export const BoxAvilitys = () => {

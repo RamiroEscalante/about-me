@@ -1,4 +1,4 @@
-import { BookOpen, Zap } from "lucide-react"
+import { BookOpen, Zap, Code2, Radar } from "lucide-react";
 
 export const WhatIamDoing = () => {
   return (
@@ -15,22 +15,57 @@ export const WhatIamDoing = () => {
           <BookOpen className="w-6 h-6 text-emerald-600" />
         </div>
         <div>
-          <h3 className="font-semibold text-slate-800 mb-2">Current Learning</h3>
+          <h3 className="font-semibold text-slate-800 mb-2">
+            Current Learning
+          </h3>
           <p className="text-slate-600 leading-relaxed">
             I'm currently taking{" "}
-            <span className="font-semibold text-emerald-700">"The Web Developer Bootcamp 2026"</span> on Udemy,
-            expanding my skills in modern web development technologies and best practices.
+            <span className="font-semibold text-emerald-700">
+              "The Web Developer Bootcamp 2026"
+            </span>{" "}
+            on Udemy, expanding my skills in modern web development technologies
+            and best practices.
           </p>
         </div>
+      </div>
+      <br />
+      <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+        <div className="p-3 bg-white rounded-lg shadow-sm">
+          <Code2 className="w-6 h-6 text-emerald-600" />
+        </div>
         <div>
-          <h3 className="font-semibold text-slate-800 mb-2">Current Learning</h3>
+          <h3 className="font-semibold text-slate-800 mb-2">
+            Current Learning
+          </h3>
           <p className="text-slate-600 leading-relaxed">
             I'm currently learning{" "}
-            <span className="font-semibold text-emerald-700">"event-driven programming"</span> in Java,
-            expanding my skills in object-oriented design and software architecture.
+            <span className="font-semibold text-emerald-700">
+              "event-driven programming"
+            </span>{" "}
+            in Java, expanding my skills in object-oriented design and software
+            architecture.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+        <div className="p-3 bg-white rounded-lg shadow-sm">
+          <Radar className="w-6 h-6 text-emerald-600" />
+        </div>
+        <div>
+          <h3 className="font-semibold text-slate-800 mb-2">
+            Current Learning
+          </h3>
+          <p className="text-slate-600 leading-relaxed">
+            I'm currently learning{" "}
+            <span className="font-semibold text-emerald-700">
+              "ROS- Robot Operating System"
+            </span>{" "}
+            in Python, expanding my skills in robotics and autonomous systems
+            development using ROS.
           </p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

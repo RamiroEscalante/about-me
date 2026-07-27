@@ -46,7 +46,7 @@ export const ContactWithMe = () => {
             </div>
             <div>
               <p className="font-semibold text-slate-800">Email</p>
-              <p className="text-[13.5px] text-slate-600 sm: text-[11.6px] group-hover:text-red-600 transition-colors">
+              <p className="text-[13.5px] text-slate-600 sm: text-[11.6px]  group-hover:text-red-600 transition-colors">
                 ramirodamianescalantecadena@gmail.com
               </p>
             </div>
