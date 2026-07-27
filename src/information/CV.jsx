@@ -40,7 +40,7 @@ export const CV = () => {
             {/* Imagen cuadrada */}
             <div className="flex justify-center mb-4 sm:mb-6">
               <img
-                src="/public/my_photo/yo.jpeg" // Cambia por la ruta real
+                src="/my_photo/yo.jpeg" // Cambia por la ruta real
                 alt="Ramiro Damian Escalante Cadena"
                 className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-lg shadow-xl border-2 border-white/20"
               />
