@@ -18,8 +18,16 @@ export const WhatIamDoing = () => {
           <h3 className="font-semibold text-slate-800 mb-2">Current Learning</h3>
           <p className="text-slate-600 leading-relaxed">
             I'm currently taking{" "}
-            <span className="font-semibold text-emerald-700">"The Web Developer Bootcamp 2025"</span> on Udemy,
+            <span className="font-semibold text-emerald-700">"The Web Developer Bootcamp 2026"</span> on Udemy,
             expanding my skills in modern web development technologies and best practices.
+          </p>
+        </div>
+        <div>
+          <h3 className="font-semibold text-slate-800 mb-2">Current Learning</h3>
+          <p className="text-slate-600 leading-relaxed">
+            I'm currently learning{" "}
+            <span className="font-semibold text-emerald-700">"event-driven programming"</span> in Java,
+            expanding my skills in object-oriented design and software architecture.
           </p>
         </div>
       </div>
