@@ -135,7 +135,7 @@ export const CV = () => {
                 {[
                   { icon: User, label: "About", href: "#about" },
                   { icon: Code, label: "Skills", href: "#skills" },
-                  { icon: BriefcaseBusiness, label: "Career", href: "#career" },
+                  { icon: Building2, label: "Career", href: "#career" },
                   { icon: Briefcase, label: "Projects", href: "#projects" },
                   { icon: BookOpen, label: "Learning", href: "#learning" },
                   { icon: Mail, label: "Contact", href: "#contact" },
